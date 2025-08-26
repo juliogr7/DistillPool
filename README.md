@@ -25,7 +25,6 @@ Models:
 Utilities / Algorithms:
 - `data_loader.py`          : Dataset and DataLoader builders (MNIST / CelebA)
 - `algo_functions.py`       : Physics factory, meters, noise injection
-- `algorithms.py`           : (Legacy) iterative preconditioned methods (FISTA / ADMM) retained as baselines
 - `progressive_distill.py`  : Includes matrix-based relational distillation loss
 
 Other:
@@ -36,8 +35,8 @@ Other:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/juliogr7/learning_preconditioning.git
-   cd learning_preconditioning
+   git clone https://github.com/juliogr7/DistillPool.git
+   cd DistillPool
    ```
 2. Create environment and Install dependencies:
    ```bash
@@ -105,5 +104,6 @@ If this work contributes to your research, please cite (coming soon):
 ## License
 
 This repository is released under the MIT License.
+
 
 
