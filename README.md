@@ -57,19 +57,19 @@ Use `test_UNet.py` to:
 ## Distillation Configuration
 ### Feature Selection Modes (type_dist)
 Pass an integer that indexes the ordered list:
-0 latent
-1 all (every stored feature scale including latent)
-2 first_latent (first encoder + latent)
-3 output (reconstruction only)
-4 output_latent (output + latent)
-5 encoder (first encoder block only)
-6 encoder_latent (first encoder + latent)
-7 latent_decoder (latent + decoder pathway features)
-8 output_latent_decoder (output + latent + decoder)
-9 output_all (output + all features)
-10 first (first encoder only)
-11 output_first_latent (output + first encoder + latent)
-12 output_first (output + first encoder)
+- 0 latent
+- 1 all (every stored feature scale including latent)
+- 2 first_latent (first encoder + latent)
+- 3 output (reconstruction only)
+- 4 output_latent (output + latent)
+- 5 encoder (first encoder block only)
+- 6 encoder_latent (first encoder + latent)
+- 7 latent_decoder (latent + decoder pathway features)
+- 8 output_latent_decoder (output + latent + decoder)
+- 9 output_all (output + all features)
+- 10 first (first encoder only)
+- 11 output_first_latent (output + first encoder + latent)
+- 12 output_first (output + first encoder)
 
 ### Loss Functions
 Argument: `--loss_distill`
@@ -105,3 +105,4 @@ If this work contributes to your research, please cite (coming soon):
 ## License
 
 This repository is released under the MIT License.
+
