@@ -1,4 +1,4 @@
-# DistillPool: Knowledge Distillation Techniques for Single-Pixel Imaging (SPI)
+# DistillPool: Knowledge Distillation Techniques for Single-Pixel Imaging
 
 Reconstructing images from compressed measurements is a main inverse problem in computational imaging, with Single-Pixel Imaging (SPI) as a flagship example. Although deep learning methods have shown strong performance in this setting, acquiring high-fidelity measurements remains a physical constraint due to the trade-off between the undersampling ratio and the optical sensor cost limits. Knowledge Distillation (KD) has emerged as a paradigm to improve performance under these constraints, by leveraging the supervision of models trained with simulated low-constrained acquisition (teachers) to guide the training of models with inputs from high-constrained and feasible optical encoders (students). This paper evaluates KD cross-techniques for SPI  distilling the knowledge between the teachers and students network. This study explores training under various undersampling ratios, leveraging response-, feature-, and relation-based distillation strategies. Our results demonstrate that specific combinations of distillation schemes significantly improve reconstruction quality for the student model, achieving up to 1.49 dB gain in PSNR metric over non-distilled training, highlighting KD as an effective framework to enhance reconstruction in physically constrained imaging systems without increasing sensing complexity.
 
@@ -103,4 +103,5 @@ If this work contributes to your research, please cite (coming soon):
 
 
 ## License
+
 This repository is released under the MIT License.
