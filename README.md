@@ -98,12 +98,28 @@ results/
     (Evaluations from `test_UNet.py`)
 
 ## Citation
-If this work contributes to your research, please cite (coming soon):
+If this work contributes to your research, please cite:
+
+```bibtex
+@INPROCEEDINGS{11156574,
+  author    = {Gutierrez-Rengifo, Julio and Diaz-Delgado, Laura C. and Arguello, Paula and Jacome, Roman and Arguello, Henry},
+  booktitle = {2025 XXV Symposium of Image, Signal Processing, and Artificial Vision (STSIVA)},
+  title     = {DistillPool: Knowledge Distillation Techniques for Single-Pixel Imaging},
+  year      = {2025},
+  volume	= {},
+  number	= {},
+  pages     = {1-5},
+  keywords  = {Training; Deep learning; Magnetic resonance imaging; Imaging; Signal processing; Optical variables measurement; Optical imaging; Optical sensors; Image reconstruction; Signal to noise ratio; Single-Pixel Imaging; Deep Learning; Knowledge Distillation; Computational Imaging},
+  doi       = {10.1109/STSIVA66383.2025.11156574}
+}
+```
+
 
 
 ## License
 
 This repository is released under the MIT License.
+
 
 
 
