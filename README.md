@@ -44,7 +44,7 @@ Other:
    The file `requirements.txt` is derived from `env_distillpool.yml` and pins versions (includes CUDA 12.4 wheels for PyTorch). If you need CPU-only PyTorch, override the first torch/torchvision/torchaudio lines with CPU packages.
 
 ## Train a Teacher
-Use `main_unet.py` with desired compression ratio `--cr` (ideally higher than student). Output weights saved under `results/trained_models`.
+Use `main_unet.py` with desired undersampling ratio `--cr` (ideally higher than student). Output weights saved under `results/trained_models`.
 
 ## Evaluation & Feature Visualization
 Use `test_UNet.py` to:
@@ -77,13 +77,11 @@ Argument: `--loss_distill`
 - linf          : max-absolute (L-infinity) difference
 - comb_matrix   : relational Frobenius distance between RBF similarity matrices of feature sets (`--gamma` controls kernel width via exp(-gamma * ||xi - xj||^2))
 
-Ground-truth loss (`--loss_gt`) supports: mse, l2, cs
-
 ### Noise Augmentation
 Enable AWGN on measurements with `--awgn_snr <SNR_dB>` to test robustness. Adds noise to student (and optionally teacher) measurement streams before backprojection.
 
 ## Physics: Single-Pixel Camera
-The physics module builds a Single-Pixel Camera forward operator using binary (or real-valued) masks stored in `masks/` and `masks_test/`. For a target compression ratio cr, the number of measurements m ≈ cr * n^2 (validated at runtime and printed). The adjoint operator provides an initial backprojection x_0 used as network input.
+The physics module builds a Single-Pixel Camera forward operator using binary masks. For a target compression ratio cr, the number of measurements m ≈ cr * n^2 (validated at runtime and printed). The adjoint operator provides an initial backprojection x_0 used as network input.
 
 ## Experiment Logging
 Weights & Biases (WandB) is integrated.
@@ -118,6 +116,7 @@ If this work contributes to your research, please cite:
 ## License
 
 This repository is released under the MIT License.
+
 
 
 
