@@ -28,7 +28,6 @@ Utilities / Algorithms:
 - `progressive_distill.py`  : Includes matrix-based relational distillation loss
 
 Other:
-- `masks/`, `masks_test/`   : Precomputed single-pixel sensing masks (training / test)
 - `deepinv/`                : External library
 
 ## Installation
@@ -119,6 +118,7 @@ If this work contributes to your research, please cite:
 ## License
 
 This repository is released under the MIT License.
+
 
 
 
